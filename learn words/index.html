@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مصابيح الكلمات | تعلّم الإنجليزية</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="stars" id="stars"></div>
+
+<div class="wrap">
+
+  <header class="hero">
+    <div class="logo-lamp">
+      <div class="logo-bulb">A B C</div>
+      <div class="logo-base"></div>
+    </div>
+    <h1 class="brand">مصابيح الكلمات
+      <span class="brand-en">Word Lanterns</span>
+    </h1>
+    <p class="tagline">أضئ مصباحًا لكل كلمة إنجليزية تتعلمها. اقلب البطاقات، اختبر نفسك، وشاهد عدّاد كلماتك يتوهّج أكثر مع كل تقدّم.</p>
+    <div class="string-lights" id="stringLights"></div>
+  </header>
+
+  <section class="stats">
+    <div class="stat-card"><div class="stat-num" id="statTotal">0</div><div class="stat-label">إجمالي الكلمات</div></div>
+    <div class="stat-card"><div class="stat-num" id="statKnown">0</div><div class="stat-label">كلمات تعلّمتها</div></div>
+    <div class="stat-card"><div class="stat-num" id="statScore">0%</div><div class="stat-label">نتيجة الاختبار</div></div>
+  </section>
+  <div class="progress-shell"><div class="progress-fill" id="progressFill"></div></div>
+
+  <div class="game-bar">
+    <div class="level-block">
+      <div class="level-badge" id="levelBadge">1</div>
+      <div class="level-info">
+        <div class="level-title" id="levelTitle">المستوى 1 · مبتدئ</div>
+        <div class="xp-shell"><div class="xp-fill" id="xpFill"></div></div>
+        <div class="xp-text" id="xpText">0 / 50 XP</div>
+      </div>
+    </div>
+    <div class="streak-block"><span class="streak-flame" id="streakFlame">🔥</span><span id="streakText">سلسلة: 0</span></div>
+  </div>
+
+  <div class="section-title"><div class="dot"></div><h2>الإنجازات</h2><div class="line"></div></div>
+  <div class="badges-wrap" id="badgesWrap"></div>
+
+  <div class="section-title"><div class="dot"></div><h2>بطاقات التعلّم (729 كلمة)</h2><div class="line"></div></div>
+  <input type="text" id="searchBox" class="search-box" placeholder="🔍 ابحث عن كلمة بالإنجليزية أو العربية...">
+  <div class="controls" id="categoryChips"></div>
+  <div class="grid" id="cardGrid"></div>
+  <div id="noResults" class="no-results" style="display:none;">لا توجد كلمات مطابقة لبحثك 🔎</div>
+  <div class="load-more-wrap">
+    <button class="chip load-more-btn" id="loadMoreBtn">عرض المزيد ⇩</button>
+  </div>
+
+  <div class="section-title"><div class="dot"></div><h2>اختبر نفسك</h2><div class="line"></div></div>
+  <div class="quiz-box">
+    <div id="quiz-question">جارٍ التحميل...</div>
+    <div id="quiz-sub">اختر الترجمة الصحيحة للكلمة</div>
+    <div class="quiz-options" id="quizOptions"></div>
+    <div id="quiz-feedback"></div>
+    <div id="quiz-score"></div>
+    <button class="next-btn" id="nextBtn">السؤال التالي »</button>
+  </div>
+
+  <div class="section-title"><div class="dot"></div><h2>لعبة المطابقة</h2><div class="line"></div></div>
+  <div class="quiz-box">
+    <div class="match-controls">
+      <button class="chip active" id="newMatchBtn">🔀 جولة جديدة</button>
+    </div>
+    <div class="match-board" id="matchBoard"></div>
+    <div class="match-status" id="matchStatus">اضغط على كلمة إنجليزية ثم ترجمتها العربية لمطابقتهما</div>
+    <div class="match-win" id="matchWin">🎉 أحسنت! أكملت الجولة بنجاح!</div>
+  </div>
+
+  <footer>صُنع بحبّ لتعلّم الإنجليزية · <span>Word Lanterns</span> · انقر على أي بطاقة لتقليبها وتعلّمها</footer>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="code.js"></script>
+</body>
+</html>
