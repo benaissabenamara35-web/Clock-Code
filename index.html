@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Clock Code</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="background">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+<header>
+
+<h1>Clock Code</h1>
+
+<p>Beautiful Clock Animations made with HTML CSS JavaScript</p>
+
+</header>
+
+
+<div class="container">
+
+<!--==========================
+      CLOCK ITEM
+===========================-->
+
+<div class="card">
+
+<div class="preview">
+
+<div id="clock1" class="demo-clock">
+12:45
+</div>
+
+</div>
+
+
+<div class="codeBox">
+
+<button class="copyBtn">
+Copy Code
+</button>
+
+<pre><code>
+<details>
+    <summary class="html">HTML</summary>
+<p>
+&lt;div class="clock"&gt;
+12:45
+&lt;/div&gt;
+</p>
+</details>
+
+<details>
+    <summary class="css">CSS</summary>
+.clock{
+font-size:60px;
+font-weight:bold;
+color:white;
+}
+</details>
+
+</code></pre>
+
+</div>
+
+</div>
+
+<!--==========================
+END
+===========================-->
+
+
+
+</div>
+
+<!--============================================================================================================================-->
+<div class="container">
+
+<!--==========================
+      CLOCK ITEM
+===========================-->
+
+<div class="card">
+
+<div class="preview">
+
+<div class="clock2">
+
+    <div class="center"></div>
+
+    <div class="hand hour" id="hour"></div>
+    <div class="hand minute" id="minute"></div>
+    <div class="hand second" id="second"></div>
+
+    <span class="number n12">12</span>
+    <span class="number n3">3</span>
+    <span class="number n6">6</span>
+    <span class="number n9">9</span>
+
+</div>
+
+</div>
+
+
+<div class="codeBox">
+
+<button class="copyBtn">
+Copy Code
+</button>
+
+<pre><code class="c2">
+<details>
+    <summary class="html">HTML</summary>
+<p>
+&lt;div class="clock2"&gt;
+    &lt;div class="center"&gt;&lt;/div&gt;
+    &lt;div class="hand hour"&gt;&lt;/div&gt;
+    &lt;div class="hand minute"&gt;&lt;/div&gt;
+    &lt;div class="hand second"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</p>
+</details>
+
+<details>
+    <summary class="css">CSS</summary>
+.clock2{
+
+position:relative;
+
+width:260px;
+height:260px;
+
+border-radius:50%;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(20px);
+
+border:6px solid rgba(255,255,255,.15);
+
+box-shadow:
+0 0 40px rgba(0,0,0,.4),
+inset 0 0 30px rgba(255,255,255,.08);
+
+}
+
+.center{
+
+position:absolute;
+
+width:14px;
+height:14px;
+
+background:white;
+
+border-radius:50%;
+
+top:50%;
+left:50%;
+
+transform:translate(-50%,-50%);
+
+z-index:20;
+
+}
+
+.hand{
+
+position:absolute;
+
+left:50%;
+bottom:50%;
+
+transform-origin:bottom;
+
+border-radius:20px;
+
+}
+
+.hour{
+
+width:7px;
+height:65px;
+
+background:white;
+
+z-index:5;
+
+}
+
+.minute{
+
+width:5px;
+height:90px;
+
+background:#00d4ff;
+
+z-index:6;
+
+}
+
+.second{
+
+width:2px;
+height:105px;
+
+background:#ff3b3b;
+
+z-index:7;
+
+}
+
+.number{
+
+position:absolute;
+
+font-size:26px;
+
+font-weight:bold;
+
+}
+
+.n12{
+
+top:15px;
+left:50%;
+
+transform:translateX(-50%);
+
+}
+
+.n3{
+
+right:18px;
+top:50%;
+
+transform:translateY(-50%);
+
+}
+
+.n6{
+
+bottom:15px;
+left:50%;
+
+transform:translateX(-50%);
+
+}
+
+.n9{
+
+left:18px;
+top:50%;
+
+transform:translateY(-50%);
+
+}
+</details>
+
+</code></pre>
+
+</div>
+
+
+</div>
+
+
+<!--==========================
+END
+===========================-->
+
+
+
+
+
+
+<div class="card">
+
+<div class="preview">
+
+<div class="clock3">
+
+    <!-- Hour 1 -->
+    <div class="digit" id="d1" >
+        <div class="a1"></div>
+        <div class="b1"></div>
+        <div class="c1"></div>
+        <div class="d1"></div>
+        <div class="e1"></div>
+        <div class="f1"></div>
+        <div class="g1"></div>
+    </div>
+
+    <!-- Hour 2 -->
+    <div class="digit" id="d2">
+        <div class="a2"></div>
+        <div class="b2"></div>
+        <div class="c2"></div>
+        <div class="d2"></div>
+        <div class="e2"></div>
+        <div class="f2"></div>
+        <div class="g2"></div>
+    </div>
+
+    <!-- Colon -->
+    <div class="colon">
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+
+    <!-- Minute 1 -->
+    <div class="digit" id="d3">
+        <div class="a3"></div>
+        <div class="b3"></div>
+        <div class="c3"></div>
+        <div class="d3"></div>
+        <div class="e3"></div>
+        <div class="f3"></div>
+        <div class="g3"></div>
+    </div>
+
+    <!-- Minute 2 -->
+    <div class="digit" id="d4">
+        <div class="a4"></div>
+        <div class="b4"></div>
+        <div class="c4"></div>
+        <div class="d4"></div>
+        <div class="e4"></div>
+        <div class="f4"></div>
+        <div class="g4"></div>
+    </div>
+
+</div>
+
+
+</div>
+
+
+<div class="codeBox">
+
+<button class="copyBtn">
+Copy Code
+</button>
+
+<pre><code class="c2">
+<details>
+    <summary class="html">HTML</summary>
+<p>
+&lt;div class="clock3"&gt;
+
+    &lt;!-- Hour 1 --&gt;
+    &lt;div class="digit" id="d1"&gt;
+        &lt;div class="a1"&gt;&lt;/div&gt;
+        &lt;div class="b1"&gt;&lt;/div&gt;
+        &lt;div class="c1"&gt;&lt;/div&gt;
+        &lt;div class="d1"&gt;&lt;/div&gt;
+        &lt;div class="e1"&gt;&lt;/div&gt;
+        &lt;div class="f1"&gt;&lt;/div&gt;
+        &lt;div class="g1"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Hour 2 --&gt;
+    &lt;div class="digit" id="d2"&gt;
+        &lt;div class="a2"&gt;&lt;/div&gt;
+        &lt;div class="b2"&gt;&lt;/div&gt;
+        &lt;div class="c2"&gt;&lt;/div&gt;
+        &lt;div class="d2"&gt;&lt;/div&gt;
+        &lt;div class="e2"&gt;&lt;/div&gt;
+        &lt;div class="f2"&gt;&lt;/div&gt;
+        &lt;div class="g2"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Colon --&gt;
+    &lt;div class="colon"&gt;
+        &lt;div class="dot"&gt;&lt;/div&gt;
+        &lt;div class="dot"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Minute 1 --&gt;
+    &lt;div class="digit" id="d3"&gt;
+        &lt;div class="a3"&gt;&lt;/div&gt;
+        &lt;div class="b3"&gt;&lt;/div&gt;
+        &lt;div class="c3"&gt;&lt;/div&gt;
+        &lt;div class="d3"&gt;&lt;/div&gt;
+        &lt;div class="e3"&gt;&lt;/div&gt;
+        &lt;div class="f3"&gt;&lt;/div&gt;
+        &lt;div class="g3"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Minute 2 --&gt;
+    &lt;div class="digit" id="d4"&gt;
+        &lt;div class="a4"&gt;&lt;/div&gt;
+        &lt;div class="b4"&gt;&lt;/div&gt;
+        &lt;div class="c4"&gt;&lt;/div&gt;
+        &lt;div class="d4"&gt;&lt;/div&gt;
+        &lt;div class="e4"&gt;&lt;/div&gt;
+        &lt;div class="f4"&gt;&lt;/div&gt;
+        &lt;div class="g4"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt;
+</p>
+</details>
+
+<details>
+    <summary class="css">CSS</summary>
+     <p>
+        body{
+    margin:0;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#0a0b1a;
+}
+
+.clock3{
+    width:900px;
+    height:380px;
+    background:#10112b;
+    border-radius:60px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,.35),
+    inset 0 0 25px rgba(255,255,255,.02);
+}
+
+
+.digit{
+    width:150px;
+    height:300px;
+    position:relative;
+}
+
+
+/* ===== جميع القطع ===== */
+
+.digit div[class^="a"],
+.digit div[class^="b"],
+.digit div[class^="c"],
+.digit div[class^="d"],
+.digit div[class^="e"],
+.digit div[class^="f"],
+.digit div[class^="g"]{
+
+    position:absolute;
+
+    background:#2d3558;
+    border:3px solid #0aa7f3;
+    border-radius:4px;
+
+    opacity:.15;
+
+    transition:
+    opacity .25s,
+    background .25s,
+    box-shadow .25s;
+}
+
+
+/* ===== القطعة المضيئة ===== */
+
+.on{
+
+    opacity:1 !important;
+
+    background:#88a8d4 !important;
+
+    box-shadow:
+    0 0 8px #12b8ff,
+    0 0 18px #12b8ff,
+    inset 0 0 8px rgba(255,255,255,.25);
+}
+
+
+/* =========================
+      Horizontal
+========================= */
+
+
+.a1,.a2,.a3,.a4{
+
+    top:0;
+    left:20px;
+
+    width:110px;
+    height:35px;
+}
+
+
+.g1,.g2,.g3,.g4{
+
+    top:132px;
+    left:22px;
+
+    width:105px;
+    height:34px;
+}
+
+
+.d1,.d2,.d3,.d4{
+
+    bottom:0;
+    left:22px;
+
+    width:105px;
+    height:34px;
+}
+
+
+
+
+/* =========================
+      Vertical
+========================= */
+
+
+.f1,.f2,.f3,.f4{
+
+    top:42px;
+    left:0;
+
+    width:32px;
+    height:95px;
+}
+
+
+
+.b1,.b2,.b3,.b4{
+
+    top:42px;
+    right:0;
+
+    width:32px;
+    height:95px;
+}
+
+
+
+.e1,.e2,.e3,.e4{
+
+    bottom:30px;
+    left:0;
+
+    width:32px;
+    height:95px;
+}
+
+
+
+.c1,.c2,.c3,.c4{
+
+    bottom:30px;
+    right:0;
+
+    width:32px;
+    height:95px;
+}
+
+
+
+
+/* =========================
+        Colon
+========================= */
+
+
+.colon{
+
+    width:55px;
+    height:180px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+}
+
+
+.dot{
+
+    width:45px;
+    height:45px;
+
+    background:#16a7e7;
+
+    box-shadow:
+    0 0 12px #12b8ff,
+    0 0 25px #12b8ff;
+}
+     </p>
+</details>
+
+</code></pre>
+
+</div>
+
+
+</div>
+<!--============================================================================================================-->
+
+</div>
+<script src="code.js"></script>
+
+</body>
+</html>
